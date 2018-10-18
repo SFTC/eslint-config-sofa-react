@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sofa-react",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-eslint": "^10.0.1",
+    "confusing-browser-globals": "^1.0.4",
     "eslint": "^5.7.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-flowtype": "^3.0.0",

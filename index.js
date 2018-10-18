@@ -28,18 +28,20 @@ module.exports = {
   },
 
   rules: {
+    'no-restricted-globals': ['error'].concat(restrictedGlobals),
+
     'import/first': 'error',
     'import/no-amd': 'error',
     'import/no-webpack-loader-syntax': 'error',
 
-    'react/jsx-closing-tag-location': 0,
-    'react/forbid-prop-types': 0,
-    'react/jsx-first-prop-new-line': [2, 'multiline'],
-    'react/jsx-filename-extension': 0,
-    'react/require-default-props': 0,
-    'react/require-extension': 0,
-    'react/self-closing-comp': 0,
-    'react/sort-comp': 0,
+    'react/jsx-closing-tag-location': 'off',
+    'react/forbid-prop-types': 'off',
+    'react/jsx-first-prop-new-line': ['error', 'multiline'],
+    'react/jsx-filename-extension': 'off',
+    'react/require-default-props': 'off',
+    'react/require-extension': 'off',
+    'react/self-closing-comp': 'off',
+    'react/sort-comp': 'off',
 
     'react/jsx-no-undef': 'error',
     'react/react-in-jsx-scope': 'error',

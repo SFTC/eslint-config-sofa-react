@@ -11,6 +11,11 @@ module.exports = {
 
   plugins: ['import', 'flowtype', 'jsx-a11y', 'react'],
 
+  react: {
+    pragma: 'React',
+    version: '16.0'
+  },
+
   env: {
     browser: true,
     commonjs: true,
@@ -33,6 +38,7 @@ module.exports = {
     'import/first': 'error',
     'import/no-amd': 'error',
     'import/no-webpack-loader-syntax': 'error',
+    "import/no-extraneous-dependencies": "off",
 
     'react/jsx-closing-tag-location': 'off',
     'react/forbid-prop-types': 'off',
@@ -46,5 +52,6 @@ module.exports = {
     'react/jsx-no-undef': 'error',
     'react/react-in-jsx-scope': 'error',
     'react/require-render-return': 'error',
+    "react/destructuring-assignment": "off",
   },
 };
